@@ -1,0 +1,27 @@
+POST https://test.clitehd.com/api/login 
+Content-Type: application/json
+
+{
+    "email": "yaser@nltvc.com",
+    "password": "yaser@123"
+}
+
+###
+
+POST https://test.clitehd.com/api/register
+Content-Type: application/json
+
+{
+    "email": "yogi@nltvc.com",
+    "password": "yogi"
+}
+
+###
+
+POST https://test.clitehd.com/api/createmeeting
+Content-Type: application/json
+
+{
+    "roomname": "yaser",
+    "password": "yaser@123"
+}

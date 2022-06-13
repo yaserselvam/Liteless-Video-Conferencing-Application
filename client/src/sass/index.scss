@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Work+Sans:wght@300&display=swap");
+@import "NavBar";
+@import "Home";
+@import "About";
+@import "SignIn";
+@import "SignUp";
+@import "Forgot";
+@import "Create";
+@import "Schedule";
+@import "NewPassword";
+@import "userStatus";
+@import "Dashboard";
+@import "EmailVerify";
+@import "Responsive";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "work sans", sans-serif;
+  background-color: #f0f4fa;
+  text-align: center;
+  height: 100vh;
+}

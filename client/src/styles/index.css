@@ -1,0 +1,576 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+nav {
+  font-family: "Jost", sans-serif;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin: 0;
+}
+.logo-container img {
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-list {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 75px;
+  background: #f0f4fa;
+  float: right;
+  text-align: center;
+  transition: all 0.5s;
+}
+.nav-list li {
+  opacity: 0;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+}
+.nav-list li a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav-list li a:hover {
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  text-decoration: underline;
+  color: black;
+  transition: 0.5s;
+}
+
+.hamburger-btn {
+  display: block;
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 75px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+#check:checked ~ .nav-list {
+  height: 100vh;
+}
+#check:checked ~ .nav-list li {
+  opacity: 1;
+}
+
+.logout, .dashboard {
+  font-family: "Jost", sans-serif;
+  padding: 0;
+  border: none;
+  background: none;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.logout:hover, .dashboard:hover {
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  text-decoration: underline;
+  color: black;
+  transition: 0.5s;
+}
+
+.demo {
+  font-family: "work sans", sans-serif;
+  text-align: center;
+  margin-top: 150px;
+}
+.demo h1 {
+  font-size: 7vmin;
+  margin-bottom: 1vmin;
+}
+.demo p {
+  font-size: 3vmin;
+}
+.demo #room-name {
+  caret-color: #fdb014;
+  font-size: 20px;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  height: 10vmin;
+  width: 60vmin;
+  border: 1px solid #5e8a83;
+  border-radius: 30px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.demo button {
+  cursor: pointer;
+  font-size: 18px;
+  height: 8vmin;
+  width: 30vmin;
+  color: #fdb014;
+  background-color: #4F8A82;
+  border: 1px black;
+  border-radius: 30px;
+}
+.demo button:hover {
+  background-color: #fdb014;
+  color: #5e8a83;
+  transition: 0.5s;
+}
+.demo .options {
+  margin-top: 20px;
+}
+.demo .options .create-btn {
+  margin-right: 20px;
+}
+.demo .options .create-btn Link {
+  text-decoration: none;
+}
+.demo .options .create-btn Link a {
+  color: black;
+}
+
+.textContent {
+  font-family: "work sans", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+.textContent p {
+  font-weight: bolder;
+  text-align: justify;
+  padding: 0 7vmin;
+}
+
+.center-login {
+  margin-top: 25vmin;
+}
+
+.center .login-title {
+  font-size: 30px;
+}
+.center h1 {
+  margin-bottom: 15px;
+}
+.center label {
+  font-size: 20px;
+}
+.center .email-login {
+  margin-right: 120px;
+}
+.center .password-login {
+  margin-right: 124px;
+}
+.center #email,
+.center #password,
+.center #date,
+.center #time,
+.center #currentPassword,
+.center #newPassword {
+  caret-color: #fdb014;
+  font-size: 20px;
+  padding: 0 15px;
+  margin: 10px 0;
+  height: 10vmin;
+  width: 60vmin;
+  border: 1px solid #4f8a82;
+  border-radius: 50px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.center .login {
+  margin: 5px 0 15px 0;
+  cursor: pointer;
+  font-size: 18px;
+  height: 10vmin;
+  width: 30vmin;
+  color: #fdb014;
+  background-color: #4f8a82;
+  border: 1px black;
+  border-radius: 30px;
+}
+.center .login:hover {
+  background-color: #fdb014;
+  color: #4f8a82;
+  transition: 0.5s;
+}
+.center .forgot-new {
+  font-weight: 100;
+  cursor: pointer;
+}
+.center .forgot-new:hover {
+  font-weight: 200;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  text-decoration: underline;
+  color: black;
+  transition: 0.5s;
+}
+.center .pass {
+  margin-bottom: 3px;
+}
+.center .link {
+  color: #000;
+}
+
+.center-signup {
+  margin-top: 20vmin;
+}
+
+.center .signup-title {
+  font-size: 30px;
+}
+.center h1 {
+  margin-bottom: 15px;
+}
+.center label {
+  font-size: 20px;
+}
+.center .password {
+  margin-right: 130px;
+}
+.center .email {
+  margin-right: 159px;
+}
+.center .repeat {
+  margin-right: 44px;
+}
+.center #password,
+.center #email,
+.center #repeat {
+  caret-color: #fdb014;
+  font-size: 20px;
+  padding-left: 15px;
+  margin: 10px 0;
+  height: 10vmin;
+  width: 60vmin;
+  border: 1px solid #4F8A82;
+  border-radius: 30px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.center .signup {
+  margin: 5px 0 15px 0;
+  cursor: pointer;
+  font-size: 18px;
+  height: 10vmin;
+  width: 30vmin;
+  color: #fdb014;
+  background-color: #4F8A82;
+  border: 1px black;
+  border-radius: 30px;
+}
+.center .signup:hover {
+  background-color: #fdb014;
+  color: #5e8a83;
+  transition: 0.5s;
+}
+.center .forgot-new {
+  font-weight: 100;
+  cursor: pointer;
+}
+.center .forgot-new:hover {
+  font-weight: 200;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  text-decoration: underline;
+  color: black;
+  transition: 0.5s;
+}
+.center .pass {
+  margin-bottom: 3px;
+}
+
+.title {
+  font-size: 1.3rem;
+  line-height: 170%;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.room-login {
+  margin-left: 55px;
+}
+
+.date {
+  margin-right: 180px;
+}
+
+.time {
+  margin-right: 175px;
+}
+
+.time-zone {
+  margin-right: 117px;
+}
+
+#change-pass-container {
+  margin: 150px 100px 0 0;
+}
+
+.current-password {
+  margin-right: 243px;
+}
+
+.new-password {
+  margin-right: 355px;
+}
+
+.styled-table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 80px 0 auto;
+  font-size: 1em;
+  min-width: 1100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.delete {
+  margin: 10px 0;
+}
+
+.styled-table thead tr,
+.styled-table thead caption {
+  background-color: #4f8a82;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table caption {
+  background-color: #fdb014;
+  color: black;
+  text-align: center;
+  caption-side: top;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #4f8a82;
+}
+
+.addEmail {
+  margin: 80px 0 0 0;
+}
+
+.addPassword {
+  margin: 80px 0 0 130px;
+}
+
+#addUser {
+  margin: 97px 0 0 75px;
+}
+
+.form-control {
+  caret-color: #fdb014;
+  border: 1px solid #4f8a82;
+  width: 380px;
+  height: 40px;
+}
+
+.form-label {
+  margin-left: 110px;
+}
+
+.addForm {
+  margin-bottom: -50px;
+}
+
+.d-flex .nav .nav-link {
+  color: black;
+}
+.d-flex .nav .active {
+  background-color: #4F8A82;
+  color: #fff;
+}
+
+.email-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.green_btn {
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  background-color: #3bb19b;
+  border-radius: 20px;
+  width: 180px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  .logo-container {
+    margin-left: 25px;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+
+  .nav-list {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+    transition: none;
+  }
+  .nav-list li {
+    display: inline-block;
+    opacity: 1;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+  .nav-list li a {
+    font-size: 25px;
+  }
+  .nav-list .logout,
+.nav-list .dashboard {
+    font-size: 25px;
+  }
+
+  .demo {
+    margin-top: 80px;
+  }
+  .demo h1 {
+    font-size: 4vmax;
+    margin-bottom: 1vmax;
+  }
+  .demo .typewriting {
+    font-size: 1.5vmax;
+  }
+  .demo #room-error {
+    font-size: 1vmax;
+  }
+  .demo #room-name {
+    margin: 80px 0 15px 0;
+    height: 3vmax;
+    width: 25vmax;
+    border-radius: 74px;
+  }
+  .demo button {
+    font-size: 23px;
+    height: 3vmax;
+    width: 10vmax;
+  }
+  .demo .options {
+    margin-top: 40px;
+  }
+  .demo .options .create-btn {
+    margin-right: 40px;
+  }
+
+  .textContent p {
+    font-size: 27px;
+    font-weight: bolder;
+  }
+
+  .center h1 {
+    margin-bottom: 20px;
+  }
+  .center .email {
+    margin-right: 350px;
+  }
+  .center .password {
+    margin-right: 320px;
+  }
+  .center .repeat {
+    margin-right: 235px;
+  }
+  .center #password,
+.center #email,
+.center #repeat,
+.center #date,
+.center #time,
+.center #currentPassword,
+.center #newPassword {
+    height: 3vmax;
+    width: 25vmax;
+  }
+  .center .login,
+.center .signup {
+    margin: 15px 0 20px 0;
+    font-size: 23px;
+    height: 3vmax;
+    width: 15vmax;
+  }
+  .center .forgot-new {
+    font-size: 20px;
+  }
+
+  .new-password {
+    margin-left: 80px;
+  }
+
+  .center-signup {
+    margin-top: 2.5vmax;
+  }
+
+  .center-login {
+    margin-top: 5vmax;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .date {
+    margin-right: 367px;
+  }
+
+  .time {
+    margin-right: 363px;
+  }
+
+  .time-zone {
+    margin-right: 305px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "work sans", sans-serif;
+  background-color: #f0f4fa;
+  text-align: center;
+  height: 100vh;
+}

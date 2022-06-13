@@ -1,0 +1,74 @@
+.styled-table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 80px 0 auto;
+  font-size: 1em;
+  min-width: 1100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.delete {
+  margin: 10px 0;
+}
+
+.styled-table {
+  thead {
+    tr,
+    caption {
+      background-color: #4f8a82;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+}
+.styled-table {
+  caption {
+    background-color: #fdb014;
+    color: black;
+    text-align: center;
+    caption-side: top;
+  }
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #4f8a82;
+}
+
+.addEmail {
+  margin: 80px 0 0 0;
+}
+
+.addPassword {
+  margin: 80px 0 0 130px;
+}
+
+#addUser {
+  margin: 97px 0 0 75px;
+}
+
+.form-control {
+  caret-color: #fdb014;
+  border: 1px solid #4f8a82;
+  width: 380px;
+  height: 40px;
+}
+
+.form-label {
+  margin-left: 110px;
+}
+
+.addForm {
+  margin-bottom: -50px;
+}

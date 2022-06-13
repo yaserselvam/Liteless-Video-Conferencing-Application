@@ -1,0 +1,151 @@
+@media only screen and (min-width: 900px) {
+  .logo-container {
+    margin-left: 25px;
+  }
+  nav {
+    height: 100px;
+  }
+  .hamburger-btn {
+    display: none;
+  }
+  .nav-list {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+    transition: none;
+
+    li {
+      display: inline-block;
+      opacity: 1;
+      line-height: 100px;
+      margin: 0 20px;
+      transition: none;
+
+      a {
+        font-size: 25px;
+      }
+    }
+
+    .logout,
+    .dashboard {
+      font-size: 25px;
+    }
+  }
+
+  .demo {
+    margin-top: 80px;
+
+    h1 {
+      font-size: 4vmax;
+      margin-bottom: 1vmax;
+    }
+
+    .typewriting {
+      font-size: 1.5vmax;
+    }
+
+    #room-error {
+      font-size: 1vmax;
+    }
+
+    #room-name {
+      margin: 80px 0 15px 0;
+      height: 3vmax;
+      width: 25vmax;
+      border-radius: 74px;
+    }
+
+    button {
+      font-size: 23px;
+      height: 3vmax;
+      width: 10vmax;
+    }
+
+    .options {
+      margin-top: 40px;
+
+      .create-btn {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .textContent {
+    p {
+      font-size: 27px;
+      font-weight: bolder;
+    }
+  }
+
+  .center {
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .email {
+      margin-right: 350px;
+    }
+    .password {
+      margin-right: 320px;
+    }
+    .repeat {
+      margin-right: 235px;
+    }
+
+    #password,
+    #email,
+    #repeat,
+    #date,
+    #time,
+    #currentPassword,
+    #newPassword {
+      height: 3vmax;
+      width: 25vmax;
+    }
+
+    .login,
+    .signup {
+      margin: 15px 0 20px 0;
+      font-size: 23px;
+      height: 3vmax;
+      width: 15vmax;
+    }
+
+    .forgot-new {
+      font-size: 20px;
+    }
+  }
+
+  .new-password {
+    margin-left: 80px;
+  }
+
+  .center-signup {
+    margin-top: 2.5vmax;
+  }
+
+  .center-login {
+    margin-top: 5vmax;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .date {
+    margin-right: 367px;
+  }
+
+  .time {
+    margin-right: 363px;
+  }
+
+  .time-zone {
+    margin-right: 305px;
+  }
+}
